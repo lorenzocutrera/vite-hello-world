@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
@@ -27,4 +27,20 @@ import HelloWorld from './components/HelloWorld.vue'
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
-</style>
+</style> -->
+
+<script>
+import title from './components/appTitle.vue'
+
+  export default{
+    // questo é il vs options object
+    components: {
+    title
+  }
+}
+</script>
+
+<template>
+  Hello Vite
+  <title></title>
+</template>
